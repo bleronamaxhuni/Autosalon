@@ -1,0 +1,92 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Shadows+Into+Light&display=swap');
+/* FONTS */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+.navbar.navbar-expand-lg.navbar-light{
+    padding-top: 10px;
+}
+.container{
+    margin-right: 5%;
+    margin-left: 5%;
+    max-width: 100%;
+}
+.companyName{
+    font-size:18px;
+    text-transform: uppercase;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+.companyName:hover{
+    color: rgb(255, 255, 255);
+}
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: rgb(145, 145, 145);
+    text-decoration-line: underline;
+    text-decoration-color:#FFD700 ;
+    text-underline-offset: 5px;
+}
+.navbar-nav{
+    width: 80%;
+    padding-left: 5%;
+}
+.nav-item{
+    padding-left: 15%;
+}
+/* .form-control{
+    border-radius: 20px;
+    background-color: #55544e98;
+    border-color: #55544e98;
+}
+.form-control::placeholder{
+    color: white;
+    font-size: 15px;
+}
+.btn.btn-outline{
+
+} */
+.d-flex {
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #55544e98;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    height: 35px;
+}
+.form-control {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 7px;
+    font-size: 13pt;
+    background-color: transparent;
+}
+.form-control:focus{
+    background-color: transparent;    
+}
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.692);
+}
+.btn.btn-outline {
+    height: 50px;
+    border: none;
+    outline: none;
+    width: 3rem;
+    color: rgba(255, 255, 255, 0.692);
+}
+.navbar-light .navbar-toggler{
+    background-color: white;
+    border: 1px solid white;
+}
