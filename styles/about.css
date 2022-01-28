@@ -107,31 +107,126 @@ body::-webkit-scrollbar-thumb{
 /* HEADER CSS */
 
 /* CONTENT CSS */
-    .card{
-        background-color: transparent;
-        border: none;
-        margin: 0 auto;
-        padding-top: 5%;
-    }
-    .card-title{
-        padding-left: 5%;
-        font-size: 20px;
-        color: white;
-    }
-    .card-text{
-        text-align: center;
-        padding-top: 15%;
-        font-size: 2.5em;
-    }
-    .blueText{
-        color:#006FFF ;
-    }
-    .emotions{
-        color: #43476A;
-        font-size: 0.7em;
-        font-family: 'Mochiy Pop P One', sans-serif;
-    }
+.card{
+    background-color: transparent;
+    border: none;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+.card-title{
+    padding-left: 7%;
+    font-size: 20px;
+    color: white;
+}
+.card-text{
+    text-align: center;
+    padding-top: 15%;
+    font-size: 2.5em;
+}
+.blueText{
+    color:#006FFF ;
+}
+.emotions{
+    color: #43476A;
+    font-size: 0.7em;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+.cards{
+    display: inline-flex;
 
+}
+.staff{
+    background-color: #2A2727;
+}
+.ourStaffCards{
+    padding-top: 7%;
+}
+.card-deck{
+    display: flex;
+    flex-direction: row;
+    max-width: 90%;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+.cardStaff{
+    width: 40%;
+    max-height: 20%;
+    background-color: #2A2727;
+    border-radius: 50px;
+}
+.col-md-5.img{
+    margin-top: -20px;
+    margin-left: -100px;
+}
+.card-title.text{
+    display: table-cell;
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+    vertical-align: middle;
+    text-align:center;
+    font-size: 1.5em;
+}
+.contactCard{
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+}
+.cardContact{
+    background-color: #D9D9D9;
+    padding: 15px;
+    border-radius: 20px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.contact-us{
+    background-color: #FF7700;
+    border: none;
+    padding: 7px;
+    border-radius: 10px;
+}
+.contact-us a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+
+.ourStaff{
+    padding-top: 8%;
+}
+.card.bord{
+    border-width: 1px;
+    border-style: solid;
+    border-left: 0;
+    border-image: linear-gradient(
+        to bottom, 
+        #ff7700d3, 
+        #ff770054,
+        #ff7700d3
+        ) 1 100%;
+    padding-right: 10em;
+
+}
+.card-body{
+    display: flex;
+    flex-direction: row;
+}
+.numbers{
+    color: #FF7700;
+    font-size: 5em;
+}
+.card-title.years{
+    display: table-cell;
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    vertical-align: middle;
+    text-align:center;
+    font-size: 2em;
+}
 
 /* CONTENT CSS */
 
