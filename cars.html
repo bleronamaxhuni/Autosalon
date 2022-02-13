@@ -10,114 +10,178 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" />
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
     <link rel="stylesheet" href="./styles/cars.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <a class="companyName" href="./home.html">
-                    <img class="companyLogo" src="./svg/1300239.png" alt="">
-                    Autosaloon</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./home.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./aboutUs.html">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./cars.html">Cars</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./cars.html">Contact</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search"> 
-                        <button class="btn btn-outline" type="submit"><i class="fas fa-search"></i></button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <header w3-include-html="header.html"></header>
 
     <section>
-        <div class="searchYourCar">
-            <div class="searchCard">
-                <h2 class="search-title">Search Your Dream Car !</h2>
-                <br>
-                <form class="form">
-                    <label for="mark">Mark</label><select class="options" name="mark" id="mark">Any</select>
-                    <label for="model">Model</label><select class="options" name="model" id="model">Any</select>
-                    <label for="registration">Registration</label><select class="options" name="registration" id="registration">Any</select>
-                    <label for="mileage">Mileage</label><select class="options" name="mileage" id="mileage">Any</select>
-                    <label for="price">Price</label><select class="options" name="price" id="price">Any</select>
+        <div class="cards">
+            <div class="searchYourCar">
+                <form class="form" action="#" method="post" target="_blank">
+                    <h4 class="searchTitle">Search Your Dream Car</h4>
+                    <div class="clearfix">
+                        <div class="col-25">
+                            <label for="mark">Mark</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="mark" name="subject" required>
+                                <option value=""></option>
+                                <option value="mark">Mercedes</option>
+                                <option value="mark">Audi</option>
+                                <option value="mark">BMW</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="clearfix">
+                        <div class="col-25">
+                            <label for="model">Model</label>
+                        </div>
+    
+                        <div class="col-75">
+                            <select id="model" name="subject" required></select>
+                        </div>
+                    </div>
+    
+                    <div class="clearfix">
+                        <div class="col-25">
+                            <label for="registration">Registration</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="reg" name="subject" required></select>
+                        </div>
+                    </div>
+    
+                    <div class="clearfix">
+                        <div class="col-25">
+                            <label for="mileage">Mileage</label>
+                        </div>
+    
+                        <div class="col-75">
+                            <select id="mileage" name="subject" required></select>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="col-25">
+                            <label for="price">Price</label>
+                        </div>
+    
+                        <div class="col-75">
+                            <select id="price" name="subject" required></select>
+                        </div>
+                    </div>
+    
+                    <div class="clearfix">
+                        <div class="searchBtn">
+                            <button class="search"> Search</button>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="filter">
+                            <a id="clickBtn" class="filterText" onclick="myFunction()" href="#"><img class="imgFilter" src="./svg/Union 9.png" alt=""> Show more filters</a>
+                        </div>
+                    </div>
                 </form>
-                <div class="searchCard-footer">
-                    <button class="searchBttn">Search</button>
-                    <br>
-                    <h6 class="filter"><a href="#"> <img  class="filterIcon" src="./svg/Union 9.png" width="20px" alt=""> Show more filters</a></h6>
-                </div>
+            </div>
+
+            <div class="searchYourCar" id="hideCard">
+                <form class="form" action="#" method="post" target="_blank">
+                    <h4 class="searchTitle">Details</h4>
+                    <div class="clearfix details">
+                        <div class="col-25">
+                            <label for="mark">Type & Condition</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="radio" id="new" name="car" value="New">  <label class="newUsed" for="New">New</label>
+                            <input type="radio" id="used" name="car" value="Used">   <label class="newUsed" for="Used">Used</label>
+                        </div>
+                    </div>
+    
+                    <div class="clearfix details">
+                        <div class="col-25">
+                            <label for="model">Fuel Type</label>
+                        </div>
+    
+                        <div class="col-75">
+                            <select id="model" name="subject" required></select>
+                        </div>
+                    </div>
+    
+                    <div class="clearfix details">
+                        <div class="col-25">
+                            <label for="mark">Transmission</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="radio" id="manual" name="transmission" value="manual">  <label class="transmission" for="manual">Manual</label>
+                            <input type="radio" id="automatic" name="transmission" value="automatic">   <label class="transmission" for="automatic">Automatic</label>
+                        </div>
+                    </div>
+    
+                    <div class="clearfix details">
+                        <div class="col-25">
+                            <label for="mark">Vehicle Shape</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="radio" id="saloon" name="shape" value="Saloon">  <label class="shape" for="saloon">Saloon</label>
+                            <input type="radio" id="small" name="shape" value="Small">   <label class="shape" for="small">Small Car</label>
+                            <input type="radio" id="cabriolet" name="shape" value="Cabriolet">   <label class="shape" for="cabriolet">Cabriolet</label>
+                            <input type="radio" id="suv" name="shape" value="Suv">   <label class="shape" for="suv">SUV</label>
+                            <input type="radio" id="van" name="shape" value="Van">   <label class="shape" for="van">Van</label>
+                        </div>
+                    </div>
+                    <div class="clearfix details">
+                        <div class="col-25">
+                            <label for="price">Exterior Color</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="price" name="subject" required></select>
+                        </div>
+                    </div>
+                    <div class="clearfix details">
+                        <div class="col-25">
+                            <label for="price">Interior Color</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="price" name="subject" required></select>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
 
+    <footer w3-include-html="footer.html"></footer>
 
-    
-    <footer>
-        <div class="footer">
-            <hr>
-            <div class="row">
-                <div class="footer-col">
-                    <h4>Menu</h4>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Car</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Get Help</h4>
-                    <ul>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#">Order Status</a></li>
-                        <li><a href="#">Cancel Order</a></li>
-                        <li><a href="#">Payment Options</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Address</h4>
-                    <ul>
-                        <li><a href="">Our big building , 
-                            Prishtine , 10000</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Follow us</h4>
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                    </ul>
-                </div>
-            </div>
-            <br>
-            <hr class="line">
-            <p class="copyright"><a class="linkCompany" href="./home.html">&copy; 2021 Autosaloon</a></p>
-        </div>
-    </footer>
 
     <!-- SCRIPT LINKS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
         integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
         </script>
     <!-- SCRIPT LINKS -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("hideCard");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        const btn = document.getElementById("clickBtn");
+
+        btn.addEventListener("click", () => {
+
+            if (btn.innerText === "Show more filters") {
+                btn.innerText = "Hide filters";
+            } else {
+                btn.innerText = "Show more filters";
+            }
+        });
+
+        w3IncludeHTML();
+    </script>
 </body>
 </html>

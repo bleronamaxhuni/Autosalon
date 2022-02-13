@@ -8,9 +8,12 @@
     margin: 0;
 }
 body{
-    background-image: url(../svg/Repeat\ Grid\ 42.png);
-    background-repeat: no-repeat;
-    background-color: rgb(0, 0, 0);
+    height:100%;
+    width:100%;
+    background-size: 100% 80%;
+    background-image: url(../svg/Group\ 4.svg);
+    background-repeat:no-repeat;
+    background-color:black;
     overflow-x: hidden;
 }
 /* SCROLL CSS */
@@ -107,69 +110,124 @@ body::-webkit-scrollbar-thumb{
 }
 /* HEADER CSS */
 
+
+
 /* CONTENT CSS */
-.searchYourCar{
-    width: 80%;
-    height: auto;
-    padding: 7%;
-}
-.searchCard{
-    width: 50%;
-    border: 1px solid transparent;
-    background-color:#2A2929;
-    border-radius: 50px;
-    padding: 1%;
-}
-.search-title{
-    text-align: center;
-    color: #FFD700;
-}
-label{
-    display: inline-block;
-    vertical-align: baseline;
+.col-25 {
+	float: left;
+	width: 20%;
+	margin-top: 6px;
 }
 
-label {
-    color: #FFD700;
-    font-size: 25px;
-    width: 50%;
-    padding: 7%;
+.col-75 {
+	float: right;
+	width: 75%;
+	margin-top: 6px;
 }
 
-.form{
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    width: 70%;
-    margin: 0 auto;
+.clearfix:after {
+	display: table;
+	content: "";
+	clear: both;
 }
-.options{
-    width: 50%;
-    padding: 1%;
-}
-.searchCard-footer{
+.cards{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content:space-evenly;
+    width: 100%;
+    padding: 7%;
 }
-.searchBttn{
-    border: none;
-    background-color: #ffd90083;
-    padding: 2%;
-    width: 30%;
+.searchYourCar{
+    width: 45%;
+}
+.form {
+    padding: 4%;
+	background-color: #2A2929;
+    border: 1px solid transparent;
     border-radius: 50px;
 }
-.filter a{
+
+h4 {
+	font-weight: normal;
+	text-align: center;
+	color:#FFD700;
+}
+
+select{
+	width: 100%;
+	padding: 10px 5px;
+	border-radius: 50px;
+	outline: none;
+	border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 0.479);
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+select:focus { border: 1px solid #bbb; }
+
+
+input[type="submit"] {
+	float: right;
+	padding: 15px 20px;
+	margin-top: 5px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	color: darkgreen;
+	background-color: rgb(144, 238, 144);
+}
+
+label { 
+	display: inline-block; 
+	padding: 12px 12px 12px 0;
+	color: #FFD700;
+}
+.searchBtn{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+.search{
+    padding: 1%;
+    width: 100px;
+    border: none;
+    background-color: #ffd9006b;
+    border-radius: 50px;
+}
+.filter{
+    display: flex;
+    justify-content: center;
+}
+.filterText{
     text-decoration: none;
     color: white;
 }
-.filter a:hover{
+.filterText:hover{
     color: #C18D00;
 }
-
+.imgFilter{
+    width: 23px;
+    height: 20px;
+}
+.newUsed , .transmission ,.shape{
+	color: white;
+}
+.clearfix.details{
+	padding-bottom: 2.5%;
+}
+.clearfix{
+	padding-top: 2%;
+	padding-bottom: 1.2%;
+}
+#hideCard{
+	display: none;
+}
+.searchTitle{
+	margin:0;
+	text-align: center;
+}
 /* CONTENT CSS */
-
-
 
 /* FOOTER */
 .row{
@@ -178,7 +236,8 @@ label {
 	justify-content: center;
 }
 h4{
-    margin-left:10% ;
+	margin-left:10% ;
+	text-align: center;
 }
 ul{
 	list-style: none;
