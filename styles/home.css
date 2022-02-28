@@ -18,42 +18,67 @@ body{
 }
 @media (max-width:1269px) {
     body{
-        background-size: 100% 60%;
+        background-size: 100% 75%;
     }
 }
 @media (max-width:1082px) {
     body{
-        background-size: 100% 50%;
+        background-size: 100% 75%;
     }
 }
-@media (max-width:979px) {
+@media (max-width:991px) {
     body{
-        background-size: 100% 40%;
+        background-size: 100% 60%;
     }
 }
 @media (max-width:882px) {
     body{
-        background-size: 100% 30%;
+        background-size: 100% 55%;
+    }
+}
+@media (max-width:760px) {
+    body{
+        background-size: 100% 55%;
+    }
+}
+@media (max-width:699px) {
+    body{
+        background-size: 100% 55%;
+    }
+}
+@media (max-width:676px) {
+    body{
+        background-size: 100% 55%;
     }
 }
 @media (max-width:619px) {
     body{
-        background-size: 100% 20%;
+        background-size: 100% 50%;
+    }
+}
+@media (max-width:574px) {
+    body{
+        background-size: 100% 30%;
     }
 }
 @media (max-width:432px) {
     body{
-        background-size: 100% 15%;
+        background-size: 100% 25%;
+    }
+}
+@media (max-width:388px) {
+    body{
+        background-size: 100% 18%;
     }
 }
 @media (max-width:312px) {
     body{
-        background-size: 100% 12%;
+        background-size: 100% 16%;
     }
 }
 @media (max-width:299px) {
     body{
-        background-size: 100% 10%;
+        background-size: 100% 15%;
     }
 }
 /* SCROLL CSS */
@@ -121,14 +146,14 @@ body::-webkit-scrollbar-thumb{
     background-color: #55544e98;
     border: 1px solid transparent;
     border-radius: 20px;
-    height: 35px;
+    height: 30px;
 }
 .form-control {
     border: none;
     outline: none;
     width: 100%;
+    font-size: 10pt;
     padding: 7px;
-    font-size: 13pt;
     background-color: transparent;
 }
 .form-control:focus{
@@ -148,6 +173,9 @@ body::-webkit-scrollbar-thumb{
     background-color: white;
     border: 1px solid white;
 }
+.navbar-toggler{
+    font-size: 15px;
+}
 @media (max-width:1500px) {
     .companyLogo{
         width: 90px;
@@ -159,15 +187,21 @@ body::-webkit-scrollbar-thumb{
     .nav-link{
         font-size: 13px;
     }
-    .form-control{
-        font-size: 10pt;
-        padding: 5px;
-    }
 }
 @media (max-width:1282px) {
     .navbar-nav{
         width: 80%;
         padding-left: 0;
+    }
+    .form-control{
+        font-size: 7pt;
+        padding: 6px;
+    }
+    .d-flex{
+        height: 25px;
+    }
+    .fas.fa-search{
+        font-size: 12px;
     }
 }
 @media (max-width:1184px) {
@@ -281,6 +315,9 @@ body::-webkit-scrollbar-thumb{
     }
 }
 @media (max-width:1418px) {
+    .card-body.text{
+        font-size: 3.2em;
+    }
     .card-body.textwarn{
         font-size: 1.3em;
         padding-left: 35px;
@@ -288,19 +325,36 @@ body::-webkit-scrollbar-thumb{
 }
 @media (max-width:1269px) {
     .card-body.text{
-        font-size: 2.5em;
+        font-size: 2.8em;
     }
     .card-body.textwarn{
-        font-size: 1em;
+        font-size: 1.2em;
+    }
+    .card.start{
+        margin-top: 25%;
     }
 }
-@media (max-width:1133) {
+@media (max-width:1133px) {
     .card-body.text{
         font-size: 2.5em;
     }
     .card-body.textwarn{
-        font-size: 0.5em;
-        padding-left: 0px;
+        font-size: 0.9em;
+        padding-left: 20%;
+    }
+}
+@media (max-width:991px) {
+    .card-body.text{
+        font-size: 2.3em;
+    }
+    .card-body.textwarn{
+        font-size: 1em;
+        padding-left: 20%;
+    }
+}
+@media(max-width:918px){
+    .card-body.textwarn{
+        font-size: 0.9em;
     }
 }
 @media (max-width:882px) {
@@ -308,9 +362,30 @@ body::-webkit-scrollbar-thumb{
         font-size: 2em;
     }
 }
+@media (max-width:854px) {
+    .card-body.text{
+        font-size: 1.9em;
+    }
+    .card-body.textwarn{
+        font-size: 0.7em;
+    }
+}
+@media (max-width:676px) {
+    .card-body.text{
+        font-size: 1.8em;
+    }
+}
 @media (max-width:619px) {
     .card-body.text{
-        font-size: 1.2em;
+        font-size: 1.8em;
+    }
+    .card.end{
+        padding-top:0%;
+    }
+}
+@media (max-width:510px) {
+    .card-body.text{
+        font-size: 1.3em;
     }
     .card.end{
         padding-top:0%;
@@ -318,12 +393,17 @@ body::-webkit-scrollbar-thumb{
 }
 @media (max-width:432px) {
     .card-body.text{
-        font-size: 1em;
+        font-size: 1.1em;
+    }
+}
+@media (max-width:388px) {
+    .card-body.text{
+        font-size: 0.8em;
     }
 }
 @media (max-width:312px) {
     .card-body.text{
-        font-size: 0.8em;
+        font-size: 0.5em;
     }
     .card.end{
         padding-right: 0;
@@ -443,8 +523,3 @@ hr {
 }
 
 /* FOOTER */
-
-
-
-/* PRELOADER */
-/* PRELOADER */
