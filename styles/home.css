@@ -270,9 +270,37 @@ body::-webkit-scrollbar-thumb{
     text-align:start;
     padding-left: 50px;
 }
+@media (max-width:1672px) {
+    .card-body.textwarn{
+        font-size: 2em;
+    }
+}
+@media (max-width:1546px) {
+    .card-body.textwarn{
+        font-size: 1.7em;
+    }
+}
+@media (max-width:1418px) {
+    .card-body.textwarn{
+        font-size: 1.3em;
+        padding-left: 35px;
+    }
+}
 @media (max-width:1269px) {
     .card-body.text{
         font-size: 2.5em;
+    }
+    .card-body.textwarn{
+        font-size: 1em;
+    }
+}
+@media (max-width:1133) {
+    .card-body.text{
+        font-size: 2.5em;
+    }
+    .card-body.textwarn{
+        font-size: 0.5em;
+        padding-left: 0px;
     }
 }
 @media (max-width:882px) {
