@@ -41,27 +41,27 @@ body{
         background-size: 100% 55%;
     }
 }
-@media (max-width:699px) {
-    body{
-        background-size: 100% 55%;
-    }
-}
-@media (max-width:676px) {
-    body{
-        background-size: 100% 55%;
-    }
-}
-@media (max-width:619px) {
+@media (max-width:704px) {
     body{
         background-size: 100% 50%;
     }
 }
-@media (max-width:574px) {
+@media (max-width:676px) {
+    body{
+        background-size: 100% 50%;
+    }
+}
+@media (max-width:619px) {
+    body{
+        background-size: 100% 45%;
+    }
+}
+@media (max-width:575px) {
     body{
         background-size: 100% 30%;
     }
 }
-@media (max-width:432px) {
+@media (max-width:444px) {
     body{
         background-size: 100% 25%;
     }
@@ -284,19 +284,20 @@ body::-webkit-scrollbar-thumb{
     border: 1px solid transparent;
     border-radius:30px ;
     background-color: rgba(255, 255, 255, 0.534);
+    max-width: 30%;
     width: 15%;
     margin-top: 22%;
     margin-left: 2%;
     box-shadow: -10px 14px 18px #5c585885, 0 10px 10px #5c585885;
 }
-.card-body.text{
+.card-title.text{
     color: rgba(255, 255, 255, 0.534);
     font-size: 3.5em;
     font-weight: 600;
     font-family: 'Bebas Neue', cursive;
     font-style: italic;
 }
-.card-body.textwarn{
+.card-title.textwarn{
     color: rgba(255, 255, 255, 0.534);
     font-size: 2.3em;
     font-family: 'Bebas Neue', cursive;
@@ -304,30 +305,37 @@ body::-webkit-scrollbar-thumb{
     text-align:start;
     padding-left: 50px;
 }
+.device{
+    display: none;
+}
+.card.device{
+    background-color: rgba(255, 255, 255, 0.534);
+    box-shadow: -10px 14px 18px #5c585885, 0 10px 10px #5c585885;
+}
 @media (max-width:1672px) {
-    .card-body.textwarn{
+    .card-title.textwarn{
         font-size: 2em;
     }
 }
 @media (max-width:1546px) {
-    .card-body.textwarn{
+    .card-title.textwarn{
         font-size: 1.7em;
     }
 }
 @media (max-width:1418px) {
-    .card-body.text{
+    .card-title.text{
         font-size: 3.2em;
     }
-    .card-body.textwarn{
+    .card-title.textwarn{
         font-size: 1.3em;
         padding-left: 35px;
     }
 }
 @media (max-width:1269px) {
-    .card-body.text{
+    .card-title.text{
         font-size: 2.8em;
     }
-    .card-body.textwarn{
+    .card-title.textwarn{
         font-size: 1.2em;
     }
     .card.start{
@@ -335,86 +343,78 @@ body::-webkit-scrollbar-thumb{
     }
 }
 @media (max-width:1133px) {
-    .card-body.text{
+    .card-title.text{
         font-size: 2.5em;
     }
-    .card-body.textwarn{
+    .card-title.textwarn{
         font-size: 0.9em;
         padding-left: 20%;
     }
 }
 @media (max-width:991px) {
-    .card-body.text{
+    .card-title.text{
         font-size: 2.3em;
     }
-    .card-body.textwarn{
+    .card-title.textwarn{
         font-size: 1em;
         padding-left: 20%;
     }
 }
 @media(max-width:918px){
-    .card-body.textwarn{
+    .card-title.textwarn{
         font-size: 0.9em;
     }
 }
 @media (max-width:882px) {
-    .card-body.text{
+    .card-title.text{
         font-size: 2em;
     }
 }
 @media (max-width:854px) {
-    .card-body.text{
+    .card-title.text{
         font-size: 1.9em;
     }
-    .card-body.textwarn{
+    .card-title.textwarn{
         font-size: 0.7em;
     }
 }
-@media (max-width:676px) {
-    .card-body.text{
-        font-size: 1.8em;
+@media (max-width:758px) {
+    .card-title.textwarn{
+        font-size: 0.6em;
     }
 }
-@media (max-width:619px) {
-    .card-body.text{
-        font-size: 1.8em;
+@media(max-width:704px){
+    .device{
+        display: block;
+        margin-top: 20%;
+        padding: 0;
     }
-    .card.end{
-        padding-top:0%;
+    .card-title.text , .card-title.textwarn{
+        font-size: 1.5em;
+        color: #202020;
+        font-weight: 600;
+        font-family: 'Bebas Neue', cursive;
+        font-style: italic;
+        text-align: center;
+        padding: 0;
     }
-}
-@media (max-width:510px) {
-    .card-body.text{
-        font-size: 1.3em;
-    }
-    .card.end{
-        padding-top:0%;
-    }
-}
-@media (max-width:432px) {
-    .card-body.text{
-        font-size: 1.1em;
+    .hide{
+        display: none;
     }
 }
-@media (max-width:388px) {
-    .card-body.text{
-        font-size: 0.8em;
+@media(max-width:575px){
+    .col-sm-5{
+        width: 50%;
+    }
+    .card-title.text , .card-title.textwarn{
+        font-size: 1em;
     }
 }
-@media (max-width:312px) {
-    .card-body.text{
-        font-size: 0.5em;
-    }
-    .card.end{
-        padding-right: 0;
+@media(max-width:308px){
+    .col-sm-5{
+        width: 100%;
     }
 }
-@media (max-width:296px) {
-    .card-body.text{
-        font-size: 0.4em;
-    }
-}
-
 /* CONTENT CSS */
 
 /* FOOTER */
@@ -439,15 +439,15 @@ footer{
 }
 .footer{
 	background-color:transparent;
-    padding: 150px;
-    padding-top: 60px;
-	padding-bottom: 0;
+    /* padding: 150px;*/
+    padding-top: 10%;
+    padding-bottom: 0;
 }
-.footer-col{
+/* .footer-col{
 	width: 22%;
 	padding: 0 15px;
-}
-.footer-col h4{
+} */
+.Footer h4{
 	font-size: 20px;
 	color: #ffffff;
 	text-transform: capitalize;
@@ -456,10 +456,10 @@ footer{
 	position: relative;
 	text-align: center;
 }
-.footer-col ul li:not(:last-child){
+.Footer ul li:not(:last-child){
 	margin-bottom: 10px;
 }
-.footer-col ul li a{
+.Footer ul li a{
 	font-size: 16px;
 	text-transform: capitalize;
 	color: #ffffff;
@@ -471,11 +471,11 @@ footer{
 	margin-right: 0px;
 	transition: all 0.3s ease;
 }
-.footer-col ul li a:hover{
+.Footer ul li a:hover{
 	color: #ffffff;
 	padding-left: 8px;
 }
-.footer-col .social-links a{
+.Footer .social-links a{
 	font-size: 16px;
 	text-transform: capitalize;
 	color: #ffffff;
@@ -487,19 +487,32 @@ footer{
 	margin-right: 30px;
 	transition: all 0.3s ease;
 }
-.footer-col .social-links a:hover{
+.Footer .social-links a:hover{
 	color: #ffffff;
 	padding-left: 8px;
 }
-
-@media(max-width: 991px){
-	.footer-col{
+@media(max-width:991px){
+    .Footer ul li a{
+        font-size: 13px;
+    }
+    .Footer h4{
+        font-size: 15px;
+    }
+}
+@media(max-width: 860px){
+	.Footer.col-sm-2{
 		width: 50%;
 		margin-bottom: 30px;
+    }
+    .Footer ul li a{
+        font-size: 15px;
+    }
+    .Footer h4{
+        font-size: 17px;
+    }
 }
-}
-@media(max-width: 574px){
-	.footer-col{
+@media(max-width: 444px){
+	.Footer.col-sm-2{
 		width: 100%;
 }
 }
