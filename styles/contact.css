@@ -15,6 +15,71 @@ body{
     background-color:black;
     overflow-x: hidden;
 }
+@media (max-width:1269px) {
+    body{
+        background-size: 100% 55%;
+    }
+}
+@media (max-width:1082px) {
+    body{
+        background-size: 100% 55%;
+    }
+}
+@media (max-width:991px) {
+    body{
+        background-size: 100% 50%;
+    }
+}
+@media (max-width:882px) {
+    body{
+        background-size: 100% 40%;
+    }
+}
+@media (max-width:760px) {
+    body{
+        background-size: 100% 35%;
+    }
+}
+@media (max-width:704px) {
+    body{
+        background-size: 100% 30%;
+    }
+}
+@media (max-width:676px) {
+    body{
+        background-size: 100% 30%;
+    }
+}
+@media (max-width:619px) {
+    body{
+        background-size: 100% 30%;
+    }
+}
+@media (max-width:575px) {
+    body{
+        background-size: 100% 25%;
+    }
+}
+@media (max-width:444px) {
+    body{
+        background-size: 100% 20%;
+    }
+}
+@media (max-width:388px) {
+    body{
+        background-size: 100% 18%;
+    }
+}
+@media (max-width:312px) {
+    body{
+        background-size: 100% 16%;
+    }
+}
+@media (max-width:299px) {
+    body{
+        background-size: 100% 15%;
+    }
+}
 /* SCROLL CSS */
 body::-webkit-scrollbar-track
 {
@@ -106,6 +171,96 @@ body::-webkit-scrollbar-thumb{
 .navbar-light .navbar-toggler{
     background-color: white;
     border: 1px solid white;
+}
+@media (max-width:1500px) {
+    .companyLogo{
+        width: 90px;
+        height: 30px;
+    }
+    .companyName{
+        font-size: 15px;
+    }
+    .nav-link{
+        font-size: 13px;
+    }
+}
+@media (max-width:1282px) {
+    .navbar-nav{
+        width: 80%;
+        padding-left: 0;
+    }
+    .form-control{
+        font-size: 7pt;
+        padding: 6px;
+    }
+    .d-flex{
+        height: 25px;
+    }
+    .fas.fa-search{
+        font-size: 12px;
+    }
+}
+@media (max-width:1184px) {
+    .companyLogo{
+        width: 50px;
+        height: 20px;
+    }
+    .companyName{
+        font-size: 12px;
+    }
+    .nav-link{
+        font-size: 10px;
+    }
+    .form-control{
+        font-size: 7pt;
+        padding: 4px;
+    }
+    .d-flex{
+        height: 25px;
+    }
+    .fas.fa-search{
+        font-size: 12px;
+    }
+}
+@media(max-width:991px){
+    .companyLogo{
+        width: 90px;
+        height: 30px;
+    }
+    .companyName{
+        font-size: 15px;
+    }
+    .nav-link{
+        font-size: 13px;
+        text-align: center;
+    }
+    .form-control{
+        font-size: 10pt;
+        padding: 5px;
+    }
+    .d-flex{
+        margin: 0 auto;
+    }
+}
+@media(max-width:486px){
+    .companyLogo{
+        width: 50px;
+        height: 20px;
+    }
+    .companyName{
+        font-size: 10px;
+    }
+    .nav-link{
+        font-size: 13px;
+        text-align: center;
+    }
+    .form-control{
+        font-size: 10pt;
+        padding: 5px;
+    }
+    .d-flex{
+        margin: 0 auto;
+    }
 }
 /* HEADER CSS */
 
