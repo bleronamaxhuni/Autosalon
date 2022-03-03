@@ -602,3 +602,18 @@ hr {
 }
 
 /* FOOTER */
+/* INFO */
+.information{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;
+}
+.titleInfo{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    width: 30%;
+    border: 1px solid #FFD700;
+    background-color: #FFD700;
+}
+/* INFO */

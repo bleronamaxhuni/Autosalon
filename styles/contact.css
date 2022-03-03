@@ -265,7 +265,7 @@ body::-webkit-scrollbar-thumb{
 /* HEADER CSS */
 
 /* CONTENT CSS */
-.Contact{
+/* .Contact{
     padding-top:7%;
 }
 .contactBox{
@@ -323,8 +323,90 @@ select{
     width: 20%;
     border: none;
     border-radius: 50px;
+} */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.container.contact{
+    top: 50%;
+    transform: translateY(10%);
+    width: 100%;
+    padding: 70px 0px;
+}
+.contact-fome{
+    max-width: 70%;
+    height: 450px;
+    margin: 0 auto;
+    background: rgba(46, 46, 46, 0.8);
+    padding: 30px;
+    border-radius: 50px;
+    display: flex;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.8); */
+}
+.input-class{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+.input-class, .msg{
+    width: 48%;
+    justify-content: space-between;
+}
+.msg{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.input-class .input, .msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #FFD700;
+    padding: 10px;
+    color: #b19a17;
+    width: 100%;
+}
+.msg textarea{
+    height: 263px;
+    border-left: 2px solid #FFD700;
+    border-right: 2px solid #FFD700;
 }
 
+::-webkit-input-placeholder{
+    color: #b19a17;
+}
+::-moz-input-placeholder{
+    color: #b19a17;
+}
+.btn.send{
+    background: #ffde23af;
+    text-align: center;
+    padding: 15px;
+    border-radius:  5px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 13px;
+}
+.btn.send:hover{
+    background-color: orange;
+    color: black;
+}
+@media screen and (max-width: 808px){
+    .contact-fome{
+        flex-direction: column;
+    }
+    .msg textarea{
+        height: 70px;
+    }
+    .input-class, .msg{
+        width: 100%;
+    }
+    .btn.send{
+        margin-bottom: 0;
+    }
+}
 /* CONTENT CSS */
 
 
